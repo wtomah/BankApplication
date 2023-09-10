@@ -1,27 +1,36 @@
-import java.util.Scanner;
-
 public class Account {
-    private int accountNumber;
-    private double amount;
-    Scanner scan = new Scanner(System.in);
+    private String firstName;
+    private String lastName;
+    private double balance;
 
-    public int getAccountNumber() {
-        return accountNumber;
+    public Account(String firstName, String lastName, double balance) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.balance = balance;
+
     }
 
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public double getAmount() {
-        return amount;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public String getLastName() {
+        return lastName;
     }
 
-    static void withdraw(){
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 
+    public double getBalance() {
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 }
