@@ -6,13 +6,13 @@ public class Menu {
 
         System.out.println("Welcome to this Elite Banking");
         System.out.println("1. Log In");
-        System.out.println("2. Log Out");
+        System.out.println("2. Leave App");
 
         int userInput = scan.nextInt();
 
         switch (userInput){
             case 1:
-                System.out.println("You haven't built this yet");
+                Login.login();
                 break;
             case 2:
                 System.out.println("Goodbye");
