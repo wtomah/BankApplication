@@ -1,29 +1,19 @@
 public class Account {
-    private String firstName;
-    private String lastName;
+    private String name;
     private double balance;
 
-    public Account(String firstName, String lastName, double balance) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public Account(String name, double balance) {
+        this.name = name;
         this.balance = balance;
 
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getBalance() {
@@ -32,5 +22,10 @@ public class Account {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "[name=" + name + ", balance=" + balance + "]";
     }
 }

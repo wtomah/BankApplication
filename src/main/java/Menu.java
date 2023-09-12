@@ -37,6 +37,9 @@ public class Menu {
 
         if (username.equals("user") && password.equals("123")) {
             System.out.println("Welcome to your Account, User");
+        } else if (username.equals("admin") && password.equals("123")) {
+            System.out.println("Welcome Admin");
+            Admin.adminMenu();
         } else {
             System.out.println("Wrong username and/or password");
             login();
