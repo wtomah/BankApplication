@@ -34,17 +34,15 @@ public class Admin {
         accountList.put(3, account3);
 
 
-        System.out.println("accountList : " + accountList + "\n");
-
         Set<Map.Entry<Integer, Account>> set = accountList.entrySet();
 
-        System.out.println("set : " + set + "\n");
 
         for (Map.Entry<Integer, Account> entry : set) {
             int accountId = entry.getKey();
             Account account = entry.getValue();
             System.out.println(accountId + " |  " + account);
         }
+        adminMenu();
 
 
         }

@@ -26,6 +26,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "[name=" + name + ", balance=" + balance + "]";
+        return "[name: " + name + ", balance: " + balance + "]";
     }
 }
